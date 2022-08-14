@@ -1,0 +1,76 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+canvas {
+    display: block;
+    touch-action: none;
+}
+
+.tool-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: 80vw;
+    height: 3rem;
+    border-radius: .5rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 .3em .2em rgba(128, 128, 128, .5);
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+    vertical-align: top;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.icon-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+.icon-btn.active {
+    background-color: #ddd;
+}
+
+.icon-btn:disabled svg {
+    fill: #888888;
+}
