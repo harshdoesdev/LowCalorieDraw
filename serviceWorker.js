@@ -6,6 +6,7 @@ const assets = [
     '/style.css',
     '/app.js',
     '/constants.js',
+    '/core/Application.js',
     '/lib/Emitter.js',
     '/lib/point-distance.js',
     '/lib/util.js',
